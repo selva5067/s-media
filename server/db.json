@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "id": "743f309e-9f07-45bd-8857-7ad59d5639cb",
+      "username": "qp",
+      "name": "SELVA PRAVEEN C",
+      "email": "cpraveen2115@gmail.com",
+      "password": "$2a$10$BGpu75FbFWG2SKeieuf.Ce4rrqjL59fuGAVIjlQk2Rp9UCX6Lk0Ma",
+      "bio": "B.TECH AI&DS",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=qp",
+      "following": [],
+      "followers": [],
+      "createdAt": "2026-07-02T08:48:02.129Z"
+    }
+  ],
+  "posts": [
+    {
+      "id": "5d14387d-1609-4b97-a349-52185777077e",
+      "authorId": "743f309e-9f07-45bd-8857-7ad59d5639cb",
+      "content": "HIII",
+      "image": null,
+      "likes": [
+        "743f309e-9f07-45bd-8857-7ad59d5639cb"
+      ],
+      "comments": [],
+      "createdAt": "2026-07-02T08:49:19.282Z"
+    },
+    {
+      "id": "c9b0bbc7-e790-4959-8686-ca66fa913a87",
+      "authorId": "743f309e-9f07-45bd-8857-7ad59d5639cb",
+      "content": "GOOD MORNING!!!!!",
+      "image": null,
+      "likes": [
+        "743f309e-9f07-45bd-8857-7ad59d5639cb"
+      ],
+      "comments": [],
+      "createdAt": "2026-07-02T08:50:01.349Z"
+    }
+  ],
+  "notifications": []
+}
