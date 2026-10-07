@@ -44,5 +44,18 @@ app.get('/api/health', (_, res) => res.json({
   database: process.env.MONGODB_URI ? 'MongoDB (Configured)' : 'LowDB/MongoDB Multi-mode',
 }));
 
+// Serve static frontend files in production if dist exists
+const clientDistPath = join(__dirname, '../client/dist');
+app.use(express.static(clientDistPath));
+
+app.get('*', (req, res, next) => {
+  if (req.path.startsWith('/api') || req.path.startsWith('/uploads')) {
+    return next();
+  }
+  res.sendFile(join(clientDistPath, 'index.html'), (err) => {
+    if (err) next();
+  });
+});
+
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => console.log(`🚀 Pulse server running on http://localhost:${PORT}`));
